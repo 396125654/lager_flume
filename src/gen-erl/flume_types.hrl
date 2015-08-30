@@ -8,7 +8,7 @@
 
 %% struct 'ThriftFlumeEvent'
 
--record('ThriftFlumeEvent', {'headers' = dict:new() :: dict(),
+-record('ThriftFlumeEvent', {'headers' = dict:new() :: dict:dict(),
                              'body' :: string() | binary()}).
 -type 'ThriftFlumeEvent'() :: #'ThriftFlumeEvent'{}.
 
